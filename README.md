@@ -9,7 +9,7 @@ Tech:
 - .net core, asp.net, c#
 - js/ts, react, server-side rendering of react
 - Postgres/Marten document DB
-- CQRS/Event Sourcing/Projections
+- DDD/CQRS/Event Sourcing/Projections
 - Behavior-driven Development
 - Code generation based on a simple dsl for events, commands, value type, ... (*.gl) Generation tool is in the Tools folder.
 
