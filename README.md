@@ -1,17 +1,26 @@
 # Psychedelic Experience
 
-Stripped down source code of my Psychedelic Experience projects (PEx). PEx was a comprehensive online resource surrounding psychedelic substances and plants.
+Stripped down source code of my Psychedelic Experience project (PEx). PEx was a comprehensive online resource surrounding psychedelic substances and plants.
 
-This is the .NET backend published in a new repo without sensitive data, a history rewrite was too much work unfortunately.
-It was under development from 2015 to 2021.
+This is the .NET backend published in a new repo without sensitive data, a git history rewrite was too much work unfortunately.
+It was under development from 2015 to 2021, it stayed online until 2022...
+
+
+Main features:
+- Organisations and reviews: organisation diectory with review system for 800+ retreat centers, research organisations, clinics, individual practicioners, ...
+- Organisation Events: Organisations could publish their events (retreats, community events, ...)
+- Experiences: publish psychedelic experience reports online (not in ui anymomre)
+- OAuth with fb and google integration, user profiles, notifications, syncrhronisation with external systems
+
 
 Tech:
 - .net core, asp.net, c#
-- js/ts, react, server-side rendering of react
+- js/ts, react (with server-side rendering)
 - Postgres/Marten document DB
-- DDD/CQRS/Event Sourcing/Projections
+- Clean Code/DDD/CQRS/Event Sourcing/Projections
 - Behavior-driven Development
 - Code generation based on a simple dsl for events, commands, value type, ... (*.gl) Generation tool is in the Tools folder.
+
 
 Key takeaways:
 - Sensitive data: don't put sensitive data (passwords, emails, api keys) in your git repositories. People are running scripts to extract it, even in the history. Also when it's a private, you never know who is watching ;-)
