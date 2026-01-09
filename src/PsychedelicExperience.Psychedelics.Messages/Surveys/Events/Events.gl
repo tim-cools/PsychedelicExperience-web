@@ -1,0 +1,15 @@
+using System
+using PsychedelicExperience.Common.Aggregates
+using PsychedelicExperience.Membership.Messages
+using PsychedelicExperience.Membership.Messages.Users
+using PsychedelicExperience.Psychedelics.Messages.Experiences
+
+namespace PsychedelicExperience.Psychedelics.Messages.Surveys.Events
+
+event SurveyAdded
+  SurveyId SurveyId
+  UserId UserId
+  ExperienceId ExperienceId
+  DateTime Started
+  string SurveyName
+  SurveyData Data

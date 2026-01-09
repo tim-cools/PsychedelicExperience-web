@@ -1,0 +1,62 @@
+using System
+using PsychedelicExperience.Common.Aggregates
+using PsychedelicExperience.Membership.Messages.Users
+
+namespace PsychedelicExperience.Membership.Messages.UserProfiles
+
+event UserProfileCreated 
+   UserProfileId UserProfileId   
+   UserId CreatorId   
+   Name DisplayName   
+   Name FullName
+   EMail EMail   
+
+event UserProfileEMailChanged 
+   UserProfileId UserProfileId   
+   UserId UserId   
+   EMail EMail   
+
+event UserProfileDisplayNameChanged 
+   UserProfileId UserProfileId   
+   UserId UserId   
+   Name DisplayName   
+
+event UserProfileFullNameChanged 
+   UserProfileId UserProfileId   
+   UserId UserId   
+   Name FullName   
+
+event UserProfileAvatarChanged 
+   UserProfileId UserProfileId   
+   UserId UserId   
+   AvatarId AvatarId   
+   string FileName   
+   string OriginalFileName   
+
+event UserProfileTaglineChanged 
+   UserProfileId UserProfileId   
+   UserId UserId   
+   string TagLine   
+
+event UserProfileDescriptionChanged 
+   UserProfileId UserProfileId   
+   UserId UserId   
+   Description Description   
+  
+event UserProfilePrivacyChanged   
+   UserProfileId UserProfileId   
+   UserId UserId   
+   PrivacyLevel Level   
+
+event UserProfileNotificationEmailDisabled
+  UserProfileId UserProfileId 
+  UserId UserId   
+
+event UserProfileNotificationEmailEnabled
+  UserProfileId UserProfileId 
+  UserId UserId   
+
+event UserProfileNotificationEmailIntervalChanged
+  UserProfileId UserProfileId 
+  UserId UserId   
+  TimeSpan Interval

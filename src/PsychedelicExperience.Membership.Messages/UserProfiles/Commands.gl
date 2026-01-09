@@ -1,0 +1,66 @@
+using System
+using PsychedelicExperience.Common
+using PsychedelicExperience.Common.Messages
+using PsychedelicExperience.Membership.Messages.Users
+
+namespace PsychedelicExperience.Membership.Messages.UserProfiles
+
+command CreateUserProfile
+  UserId RequesterId  
+  UserProfileId UserProfileId  
+  Name DisplayName  
+  Name FullName  
+  EMail EMail  
+
+command ChangeUserProfileEMail
+  UserId RequesterId  
+  UserProfileId UserProfileId  
+  EMail EMail  
+
+command ChangeUserProfileAddress
+  UserId RequesterId  
+  UserProfileId UserProfileId  
+  Address Address  
+
+command ChangeUserProfileDisplayName
+  UserId RequesterId  
+  UserProfileId UserProfileId  
+  Name Name  
+
+command ChangeUserProfileFullName
+  UserId RequesterId  
+  UserProfileId UserProfileId  
+  Name Name  
+
+command ChangeUserProfileAvatar
+  UserId RequesterId  
+  UserProfileId UserProfileId  
+  FormFile File  
+
+command ChangeUserProfileTagline
+  UserId RequesterId  
+  UserProfileId UserProfileId  
+  string TagLine  
+
+command ChangeUserProfileDescription
+  UserId RequesterId  
+  UserProfileId UserProfileId  
+  Description Description  
+
+command ChangeUserProfilePrivacy
+  UserId RequesterId  
+  UserProfileId UserProfileId  
+  PrivacyLevel Level  
+
+command DisableUserProfileNotificationEmail
+  UserId RequesterId  
+  UserProfileId UserProfileId
+
+command EnableUserProfileNotificationEmail
+  UserId RequesterId  
+  UserProfileId UserProfileId
+
+command ChangeUserProfileNotificationEmailInterval
+  UserId RequesterId  
+  UserProfileId UserProfileId
+  TimeSpan Interval

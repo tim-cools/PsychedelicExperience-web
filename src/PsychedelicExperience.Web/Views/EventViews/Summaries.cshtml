@@ -1,0 +1,35 @@
+﻿@using System.Globalization
+@model PsychedelicExperience.Psychedelics.Messages.Events.Queries.EventSummary[]
+@foreach (var summary in Model)
+{
+    <div style="border: 1px #e5e5e5 solid; background: #f9f9f9; margin: 0; padding: 0; overflow: hidden; font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;&quotes; margin-bottom: 8px">
+        <div style="float: left; margin-right: 10px">
+            <div style="width: 180px; height: 120px; overflow: hidden">
+                <img style="max-width: 180px; max-height: 120px; margin: 0; display: block"
+                     src="https://www.psychedelicexperience.net/event/@summary.EventId/image?width=180&amp;height=120&amp;"
+                     alt="@summary.Name">
+            </div>
+        </div>
+        <div style="padding: 12px; margin-left: 180px">
+            <h3 style="font-size: 15px; font-weight: 700; line-height: 1.3; margin-top: 0; margin-bottom: 8px">
+                <a href="https://www.psychedelicexperience.net/event/@summary.EventId">
+                    @summary.Name
+                </a>
+            </h3>
+
+            <div style="margin-bottom: 8px">
+                @foreach (var tag in summary.Tags)
+        {
+            <a style="background-color: #5bc0de; padding: .2em .6em .3em; font-size: 75%; font-weight: 700;color: #fff;text-align: center;white-space: nowrap; vertical-align: baseline; border-radius: .25em; margin: 1px; line-height: 1.2; display: inline-block;"
+               href="https://www.psychedelicexperience.net/organisation/tag/@tag">@tag</a>
+        }
+            </div>
+            @summary.Type&nbsp;for&nbsp;
+            <a href="@{ Write("https://www.psychedelicexperience.net" + summary.OrganisationUrl); }">
+                @summary.OrganisationName</a> on
+            @summary.StartDateTime.ToString("D", CultureInfo.InvariantCulture)
+
+            <div>@summary.Address</div>
+        </div>
+     </div>
+}

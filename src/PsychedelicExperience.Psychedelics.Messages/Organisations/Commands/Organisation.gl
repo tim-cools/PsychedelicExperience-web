@@ -1,0 +1,75 @@
+using System
+using PsychedelicExperience.Common
+using PsychedelicExperience.Common.Messages
+using PsychedelicExperience.Membership.Messages
+using PsychedelicExperience.Membership.Messages.Users
+
+namespace PsychedelicExperience.Psychedelics.Messages.Organisations.Commands
+
+command AddOrganisation
+  OrganisationId OrganisationId 
+  UserId UserId 
+  bool Person
+  string[] Types 
+  Name Name 
+  string Description 
+  
+  Contact[] Contacts 
+  string[] Tags 
+  Address Address 
+  
+  Center Center 
+  Community Community 
+  HealthcareProvider HealthcareProvider 
+
+command AddOrganisationContact
+  OrganisationId OrganisationId 
+  UserId UserId 
+  string Type
+  string Value 
+
+command ChangeOrganisationAddress
+  OrganisationId OrganisationId 
+  UserId UserId 
+  Address Address 
+	
+command AddOrganisationOwner AddOrganisationOwnerResult
+  OrganisationId OrganisationId 
+  UserId UserId 
+  EMail UserEmail 
+  UserId OwnerId 
+
+commandResult AddOrganisationOwnerResult
+  Guid OwnerId
+  
+command AddOrganisationTag
+  OrganisationId OrganisationId
+  UserId UserId
+  string TagName
+  
+command RemoveOrganisationTag
+  OrganisationId OrganisationId
+  UserId UserId
+  string TagName
+  
+command AddOrganisationType
+  OrganisationId OrganisationId
+  UserId UserId
+  string Type
+  
+command RemoveOrganisationType
+  OrganisationId OrganisationId
+  UserId UserId
+  string Type
+  
+command LinkOrganisation
+  OrganisationId OrganisationId
+  OrganisationId TargetId
+  UserId UserId  
+  string Relation
+  
+command UnlinkOrganisation
+  OrganisationId OrganisationId
+  OrganisationId TargetId
+  UserId UserId
+  string Relation

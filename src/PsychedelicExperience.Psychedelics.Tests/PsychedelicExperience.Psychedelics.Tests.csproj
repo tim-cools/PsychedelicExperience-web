@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <VersionPrefix>1.1.0.0</VersionPrefix>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>PsychedelicExperience.Psychedelics.Tests</AssemblyName>
+    <PackageId>PsychedelicExperience.Psychedelics.Tests</PackageId>
+    <LangVersion>8</LangVersion>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="appsettings*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PsychedelicExperience.Common\PsychedelicExperience.Common.csproj" />
+    <ProjectReference Include="..\PsychedelicExperience.Common.Tests\PsychedelicExperience.Common.Tests.csproj" />
+    <ProjectReference Include="..\PsychedelicExperience.Psychedelics\PsychedelicExperience.Psychedelics.csproj" />
+    <ProjectReference Include="..\PsychedelicExperience.Psychedelics.Messages\PsychedelicExperience.Psychedelics.Messages.csproj" />
+    <ProjectReference Include="..\PsychedelicExperience.Membership.Tests\PsychedelicExperience.Membership.Tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+    <PackageReference Include="Shouldly" Version="3.0.2" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="Marten" Version="3.13.4" />
+    <PackageReference Include="Bogus" Version="28.4.4" />
+
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\config\appsettings.tests.local.json">
+      <Link>appsettings.tests.local.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

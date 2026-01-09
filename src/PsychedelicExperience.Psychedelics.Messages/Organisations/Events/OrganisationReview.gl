@@ -1,0 +1,71 @@
+using System
+using PsychedelicExperience.Common.Aggregates
+using PsychedelicExperience.Membership.Messages
+using PsychedelicExperience.Membership.Messages.Users
+using PsychedelicExperience.Psychedelics.Messages.Experiences
+
+namespace PsychedelicExperience.Psychedelics.Messages.Organisations.Events
+
+event OrganisationReviewAdded
+  OrganisationReviewId OrganisationReviewId  
+  OrganisationId OrganisationId  
+  ExperienceId ExperienceId  
+  UserId UserId  
+  string Name  
+  string Description  
+  DateTime Visited  
+  ScaleOf5 Rating  
+  string Feedback
+
+  CenterReview Center  
+  CommunityReview Community  
+  HealthcareProviderReview HealthcareProvider  
+
+event OrganisationReviewCenterChanged
+  OrganisationId OrganisationId  
+  OrganisationReviewId OrganisationReviewId  
+  UserId UserId  
+  CenterReview Previous  
+  CenterReview Review  
+
+event OrganisationReviewCommunityChanged
+  OrganisationId OrganisationId  
+  OrganisationReviewId OrganisationReviewId  
+  UserId UserId  
+  CommunityReview Previous  
+  CommunityReview Review  
+
+event OrganisationReviewDescriptionChanged
+  OrganisationReviewId OrganisationReviewId  
+  UserId UserId  
+  string Description  
+
+event OrganisationReviewHealthcareProviderChanged
+  OrganisationId OrganisationId  
+  OrganisationReviewId OrganisationReviewId  
+  UserId UserId  
+  HealthcareProviderReview Previous  
+  HealthcareProviderReview Review  
+
+event OrganisationReviewNameChanged
+  OrganisationReviewId OrganisationReviewId  
+  UserId UserId  
+  string Name  
+
+event OrganisationReviewRated
+  OrganisationId OrganisationId  
+  OrganisationReviewId OrganisationReviewId  
+  UserId UserId  
+  ScaleOf5 PreviousRating  
+  ScaleOf5 Rating  
+
+event OrganisationReviewRemoved
+  OrganisationReviewId OrganisationReviewId  
+  OrganisationId OrganisationId  
+  UserId UserId  
+  ScaleOf5 Rating  
+
+event OrganisationReviewReported
+  OrganisationReviewId OrganisationReviewId  
+  UserId UserId  
+  string Reason  

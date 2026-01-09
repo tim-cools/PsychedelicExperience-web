@@ -1,0 +1,48 @@
+{
+  "version": "1.0.1.0",
+
+  "testRunner": "xunit",
+
+  "tooling": {
+    "defaultNamespace": "PsychedelicExperience.Common.Tests"
+  },
+
+  "runtimeOptions": {
+    "configProperties": {
+      "System.GC.Server": true
+    }
+  },
+
+  "buildOptions": {
+    "copyToOutput": [
+      "appsettings*.json"
+    ],
+    "embed": [
+      "Storage/CreateStore.sql"
+    ]
+  },
+
+  "dependencies": {
+    "dotnet-test-xunit": "2.2.0-preview2-build1029",
+    "xunit": "2.2.0",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0",
+    "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0",
+    "Microsoft.Extensions.Logging": "1.0.0",
+    "Microsoft.Extensions.Logging.Console": "1.0.0",
+    "Microsoft.Extensions.Logging.Debug": "1.0.0",
+    "Microsoft.AspNetCore.Hosting": "1.0.0",
+    "PsychedelicExperience.Common": "1.0.1.0",
+    "Newtonsoft.Json": "9.0.1",
+    "Marten": "1.2.4",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.1"
+    }
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  }
+}

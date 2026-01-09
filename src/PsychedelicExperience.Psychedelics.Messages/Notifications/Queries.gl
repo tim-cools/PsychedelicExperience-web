@@ -1,0 +1,19 @@
+using System
+using PsychedelicExperience.Common.Messages
+using PsychedelicExperience.Membership.Messages.Users
+
+namespace PsychedelicExperience.Psychedelics.Messages.Notifications
+
+command GetNotifications NotificationsResult 
+   UserId UserId   
+   int Page
+
+value NotificationsResult
+  Notification[] Notifications
+  long Page
+  long Total
+  long Last
+
+value Notification
+  DateTime DateTime
+  string Body

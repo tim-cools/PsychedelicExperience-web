@@ -1,0 +1,176 @@
+using System
+using PsychedelicExperience.Common.Aggregates
+using PsychedelicExperience.Membership.Messages
+using PsychedelicExperience.Membership.Messages.Users
+using PsychedelicExperience.Psychedelics.Messages.Experiences
+
+namespace PsychedelicExperience.Psychedelics.Messages.Organisations.Events
+
+enum ScaleOf5
+  One 1
+  Two 2
+  Three 3
+  Four 4
+  Five 5
+
+event OrganisationAdded
+  OrganisationId OrganisationId
+  UserId UserId
+  bool Person
+  string[] Types
+  Name Name
+  string Description
+  string Website
+  EMail EMail
+  string Phone
+  Address Address
+  string[] Tags
+  Contact[] Contacts
+  Center Center
+  Community Community
+  HealthcareProvider HealthcareProvider
+
+event OrganisationAddressChanged
+  OrganisationId OrganisationId  
+  UserId UserId  
+  Address Address  
+
+event OrganisationCenterChanged
+  OrganisationId OrganisationId  
+  UserId UserId  
+  Center Center  
+
+event OrganisationCommunityChanged
+  OrganisationId OrganisationId  
+  UserId UserId  
+  Community Community  
+
+event OrganisationContactAddded
+  OrganisationId OrganisationId  
+  UserId UserId  
+  string Type  
+  string Value  
+
+event OrganisationContacted
+  OrganisationId OrganisationId  
+  UserId UserId  
+  string EMail  
+  string Subject  
+  string Message  
+  string UserName  
+  string OrganisationName  
+  string OrganisationEmail  
+
+event OrganisationContactRemoved
+  OrganisationId OrganisationId  
+  UserId UserId  
+  string Type  
+  string Value  
+
+event OrganisationDescriptionChanged
+  OrganisationId OrganisationId  
+  UserId UserId  
+  string Description  
+
+event OrganisationHealthcareProviderChanged
+  OrganisationId OrganisationId  
+  UserId UserId  
+  HealthcareProvider HealthcareProvider  
+
+event OrganisationInfoRemoved
+  OrganisationId OrganisationId  
+  UserId UserId  
+  string Title  
+  string Content  
+
+event OrganisationInfoSet
+  OrganisationId OrganisationId  
+  UserId UserId  
+  string Title  
+  string Content  
+
+event OrganisationNameChanged
+  OrganisationId OrganisationId  
+  UserId UserId  
+  Name Name  
+
+event OrganisationOwnerAdded
+  OrganisationId OrganisationId  
+  UserId UserId  
+  UserId OwnerId  
+
+event OrganisationOwnerConfirmed
+  OrganisationId OrganisationId  
+  UserId UserId  
+
+event OrganisationOwnerInvited
+  OrganisationId OrganisationId  
+  UserId UserId  
+  UserId OwnerId  
+  EMail UserEmail  
+
+event OrganisationOwnerRemoved
+  OrganisationId OrganisationId  
+  UserId UserId  
+  UserId OwnerId  
+
+event OrganisationPhotoRemoved
+  OrganisationId OrganisationId  
+  PhotoId PhotoId  
+  UserId UserId  
+
+event OrganisationPhotosAdded
+  OrganisationId OrganisationId  
+  UserId UserId  
+  Photo[] Photos  
+
+event OrganisationRemoved
+  OrganisationId OrganisationId  
+  UserId UserId  
+
+event OrganisationReported
+  OrganisationId OrganisationId  
+  UserId UserId  
+  string Reason  
+
+event OrganisationTagAdded
+  OrganisationId OrganisationId  
+  UserId UserId  
+  string TagName  
+
+event OrganisationTagRemoved
+  OrganisationId OrganisationId  
+  UserId UserId  
+  string TagName  
+  
+event OrganisationTypeAdded
+  OrganisationId OrganisationId  
+  UserId UserId  
+  string Type  
+
+event OrganisationTypeRemoved
+  OrganisationId OrganisationId  
+  UserId UserId  
+  string Type  
+
+event OrganisationWarningRemoved
+  OrganisationId OrganisationId  
+  UserId UserId  
+
+event OrganisationWarningSet
+  OrganisationId OrganisationId
+  UserId UserId
+  string Title
+  string Content
+
+event OrganisationLinked
+  OrganisationId OrganisationId
+  OrganisationId TargetId
+  UserId UserId
+  string Relation
+
+event OrganisationUnlinked
+  OrganisationId OrganisationId
+  OrganisationId TargetId
+  UserId UserId
+  string Relation

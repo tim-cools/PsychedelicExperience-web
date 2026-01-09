@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <VersionPrefix>1.1.0.0</VersionPrefix>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>PsychedelicExperience.Membership.Messages</AssemblyName>
+    <PackageId>PsychedelicExperience.Membership.Messages</PackageId>
+    <LangVersion>8</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="UserProfiles\Commands.gl" />
+    <Content Include="UserProfiles\Events.gl" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PsychedelicExperience.Common\PsychedelicExperience.Common.csproj" />
+  </ItemGroup>
+
+</Project>

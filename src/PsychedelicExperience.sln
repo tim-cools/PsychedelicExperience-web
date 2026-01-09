@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26114.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{26EE359E-2896-4B4F-AF99-828CC927209C}"
+	ProjectSection(SolutionItems) = preProject
+		..\config\appsettings.tests.appveyor.json = ..\config\appsettings.tests.appveyor.json
+		..\config\appsettings.tests.json = ..\config\appsettings.tests.json
+		..\config\appsettings.tests.local.json = ..\config\appsettings.tests.local.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychedelicExperience.Common", "PsychedelicExperience.Common\PsychedelicExperience.Common.csproj", "{D506377C-CC10-4580-AEF1-89B144E26617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychedelicExperience.Common.Tests", "PsychedelicExperience.Common.Tests\PsychedelicExperience.Common.Tests.csproj", "{25EE8BDE-CA7A-48B2-9C70-11A9D2D73871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychedelicExperience.Membership.Messages", "PsychedelicExperience.Membership.Messages\PsychedelicExperience.Membership.Messages.csproj", "{DE21A803-26CD-4505-A3BF-035E485D5D9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychedelicExperience.Membership", "PsychedelicExperience.Membership\PsychedelicExperience.Membership.csproj", "{527D4FFD-1CFA-4047-B8C6-261875C5DFC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychedelicExperience.Membership.Tests", "PsychedelicExperience.Membership.Tests\PsychedelicExperience.Membership.Tests.csproj", "{D0BC98B9-B7CD-49D4-8DB7-238E0B558157}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Membership", "Membership", "{836B3787-4D0F-40D2-85DA-6D3AEC99AACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychedelicExperience.Web", "PsychedelicExperience.Web\PsychedelicExperience.Web.csproj", "{B5BFCB68-A711-45E0-B75E-C7ABFF5C4EAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychedelicExperience.Web.Tests", "PsychedelicExperience.Web.Tests\PsychedelicExperience.Web.Tests.csproj", "{36BCB6BF-A4D1-4D20-9554-C84C1CF511DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Psychedelics", "Psychedelics", "{7E935F57-8EB2-403C-9505-DA20F1AB8FCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychedelicExperience.Psychedelics", "PsychedelicExperience.Psychedelics\PsychedelicExperience.Psychedelics.csproj", "{8EA08BAF-DD4B-48E3-A8A5-14DF34FF3092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychedelicExperience.Psychedelics.Messages", "PsychedelicExperience.Psychedelics.Messages\PsychedelicExperience.Psychedelics.Messages.csproj", "{19A357D3-1092-459E-8923-3F2EF7DDC682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychedelicExperience.Psychedelics.Tests", "PsychedelicExperience.Psychedelics.Tests\PsychedelicExperience.Psychedelics.Tests.csproj", "{9A790150-4ABF-4B50-A9CE-B6C059684B0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D506377C-CC10-4580-AEF1-89B144E26617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D506377C-CC10-4580-AEF1-89B144E26617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D506377C-CC10-4580-AEF1-89B144E26617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D506377C-CC10-4580-AEF1-89B144E26617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25EE8BDE-CA7A-48B2-9C70-11A9D2D73871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25EE8BDE-CA7A-48B2-9C70-11A9D2D73871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25EE8BDE-CA7A-48B2-9C70-11A9D2D73871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25EE8BDE-CA7A-48B2-9C70-11A9D2D73871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE21A803-26CD-4505-A3BF-035E485D5D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE21A803-26CD-4505-A3BF-035E485D5D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE21A803-26CD-4505-A3BF-035E485D5D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE21A803-26CD-4505-A3BF-035E485D5D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{527D4FFD-1CFA-4047-B8C6-261875C5DFC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527D4FFD-1CFA-4047-B8C6-261875C5DFC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527D4FFD-1CFA-4047-B8C6-261875C5DFC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527D4FFD-1CFA-4047-B8C6-261875C5DFC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0BC98B9-B7CD-49D4-8DB7-238E0B558157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0BC98B9-B7CD-49D4-8DB7-238E0B558157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0BC98B9-B7CD-49D4-8DB7-238E0B558157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0BC98B9-B7CD-49D4-8DB7-238E0B558157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5BFCB68-A711-45E0-B75E-C7ABFF5C4EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5BFCB68-A711-45E0-B75E-C7ABFF5C4EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5BFCB68-A711-45E0-B75E-C7ABFF5C4EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5BFCB68-A711-45E0-B75E-C7ABFF5C4EAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36BCB6BF-A4D1-4D20-9554-C84C1CF511DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36BCB6BF-A4D1-4D20-9554-C84C1CF511DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36BCB6BF-A4D1-4D20-9554-C84C1CF511DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36BCB6BF-A4D1-4D20-9554-C84C1CF511DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA08BAF-DD4B-48E3-A8A5-14DF34FF3092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA08BAF-DD4B-48E3-A8A5-14DF34FF3092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA08BAF-DD4B-48E3-A8A5-14DF34FF3092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA08BAF-DD4B-48E3-A8A5-14DF34FF3092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A357D3-1092-459E-8923-3F2EF7DDC682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A357D3-1092-459E-8923-3F2EF7DDC682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A357D3-1092-459E-8923-3F2EF7DDC682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A357D3-1092-459E-8923-3F2EF7DDC682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A790150-4ABF-4B50-A9CE-B6C059684B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A790150-4ABF-4B50-A9CE-B6C059684B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A790150-4ABF-4B50-A9CE-B6C059684B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A790150-4ABF-4B50-A9CE-B6C059684B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE21A803-26CD-4505-A3BF-035E485D5D9E} = {836B3787-4D0F-40D2-85DA-6D3AEC99AACB}
+		{527D4FFD-1CFA-4047-B8C6-261875C5DFC2} = {836B3787-4D0F-40D2-85DA-6D3AEC99AACB}
+		{D0BC98B9-B7CD-49D4-8DB7-238E0B558157} = {836B3787-4D0F-40D2-85DA-6D3AEC99AACB}
+		{8EA08BAF-DD4B-48E3-A8A5-14DF34FF3092} = {7E935F57-8EB2-403C-9505-DA20F1AB8FCA}
+		{19A357D3-1092-459E-8923-3F2EF7DDC682} = {7E935F57-8EB2-403C-9505-DA20F1AB8FCA}
+		{9A790150-4ABF-4B50-A9CE-B6C059684B0A} = {7E935F57-8EB2-403C-9505-DA20F1AB8FCA}
+	EndGlobalSection
+EndGlobal
