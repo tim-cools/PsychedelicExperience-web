@@ -179,12 +179,7 @@ namespace PsychedelicExperience.Web
                 options.AddPolicy(DefaultName, policy =>
                     policy.AllowAnyHeader()
                         .AllowAnyMethod()
-                        .WithOrigins(
-                            "http://localhost",
-                            "https://d20zb874ut57lk.cloudfront.net",
-                            "https://dytky5wb8xu2e.cloudfront.net",
-                            "https://staging.psychedelicexperience.net",
-                            "https://www.psychedelicexperience.net")
+                        .WithOrigins("http://localhost")
                         .WithExposedHeaders("location"));
                 return;
             }

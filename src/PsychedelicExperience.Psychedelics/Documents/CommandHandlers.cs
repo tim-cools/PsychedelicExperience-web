@@ -255,5 +255,4 @@ namespace PsychedelicExperience.Psychedelics.Documents
         {
         }
     }
-
 }
